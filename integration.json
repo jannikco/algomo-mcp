@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": true,
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "sourceRevision": "40bfbd3629268b54f95a9a1cc81df7016361e1f19b60ef12cbac1c7e17807337",
+  "evidence": [
+    "Source-backed provider setup metadata",
+    "Offline configuration and MCP protocol tests"
+  ],
+  "provenance": [
+    "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access"
+  ],
+  "id": "algomo-mcp",
+  "kind": "mcp-setup",
+  "product": "pipmcp",
+  "title": "Algomo MCP setup and connection checker",
+  "description": "Generate Algomo MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "operationIds": [],
+  "appSlug": "algomo",
+  "appName": "Algomo",
+  "providerDocs": "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access",
+  "providerWebsite": "https://www.algomo.com/",
+  "authentication": {
+    "type": "bearer",
+    "requiredCredentialFields": [
+      "token"
+    ],
+    "requiredHeaderNames": [],
+    "helpUrl": "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access",
+    "tenantRequired": false,
+    "accountParameterNames": []
+  },
+  "attributionSlug": "github-algomo-mcp"
+}
