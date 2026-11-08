@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "product": "pipmcp",
+  "credential": "PIPMCP_API_KEY",
+  "skills": [
+    {
+      "name": "pipmcp-algomo",
+      "description": "Connect AI agents to Algomo using one PipMCP API key and actual hosted tool discovery."
+    }
+  ],
+  "files": {
+    "skills/pipmcp-algomo/SKILL.md": "26c34cc0732b93af640c745f58a131d34aa85ed69f629cfdc48de5c877dcbb84"
+  }
+}

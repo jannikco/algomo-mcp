@@ -1,39 +1,62 @@
 {
   "schemaVersion": 1,
-  "status": "ready",
-  "verification": "mock-only",
-  "releaseEligible": true,
-  "maintainer": "jannikco",
-  "license": "MIT",
-  "sourceRevision": "40bfbd3629268b54f95a9a1cc81df7016361e1f19b60ef12cbac1c7e17807337",
-  "evidence": [
-    "Source-backed provider setup metadata",
-    "Offline configuration and MCP protocol tests"
-  ],
-  "provenance": [
-    "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access"
-  ],
   "id": "algomo-mcp",
   "kind": "mcp-setup",
   "product": "pipmcp",
   "title": "Algomo MCP setup and connection checker",
-  "description": "Generate Algomo MCP client configuration, inspect available tools and validate hosted endpoint access through PipMCP.",
+  "description": "Prepare Algomo for AI workflows with a PipMCP setup doctor, authenticated discovery and coding-agent instructions.",
+  "status": "ready",
+  "verification": "mock-only",
+  "releaseEligible": false,
   "operationIds": [],
+  "maintainer": "jannikco",
+  "license": "MIT",
+  "attributionSlug": "github-algomo-mcp",
+  "sourceRevision": "fe1a66214301d732b7adc95d4d3bf935bb505d68028d141662f47f92fbdb07b0",
+  "qualityVersion": 2,
+  "artifactType": "setup",
+  "evidence": [
+    "Gateway HTTP transport fixtures",
+    "Generated stdio wrapper discovery/call fixtures"
+  ],
+  "provenance": [
+    "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access"
+  ],
+  "utility": {
+    "problem": "Prepare Algomo and inspect your hosted setup",
+    "output": "Offline setup plan and authenticated discovery diagnostics"
+  },
   "appSlug": "algomo",
   "appName": "Algomo",
-  "providerDocs": "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access",
-  "providerWebsite": "https://www.algomo.com/",
-  "authentication": {
-    "type": "bearer",
-    "requiredCredentialFields": [
-      "token"
-    ],
-    "requiredHeaderNames": [],
-    "helpUrl": "https://help.algomo.com/article/55454c448eae4ca4a80c6cf0ffcc3627-api-access",
-    "tenantRequired": false,
-    "accountParameterNames": []
+  "maintenanceOnly": true,
+  "executionAuthority": "pipmcp-gateway",
+  "version": "1.0.0",
+  "agentReady": true,
+  "capabilityEvidence": {
+    "local": {
+      "level": "Tested",
+      "operations": [
+        {
+          "name": "gateway_transport",
+          "level": "Tested",
+          "method": "contract-fixture",
+          "evidenceRefs": [
+            "Generated gateway/stdio fixtures"
+          ]
+        }
+      ],
+      "evidenceRefs": [
+        "Generated gateway/stdio fixtures"
+      ],
+      "mode": "local"
+    },
+    "managed": {
+      "level": "Documented",
+      "operations": [],
+      "evidenceRefs": [],
+      "mode": "managed"
+    }
   },
-  "attributionSlug": "github-algomo-mcp",
   "factory": "leadadapter-pipmcp",
-  "generatorVersion": 1
+  "generatorVersion": 3
 }
